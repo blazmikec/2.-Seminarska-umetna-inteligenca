@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>2. Seminarska</title>
+	<link rel="shortcut icon" href="https://www.favicon.cc/logo3d/743128.png" type="image/x-icon">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Teko:wght@500&display=swap" rel="stylesheet">    
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	
+</head>
+<body bgcolor="#555">
+	<div class="sidebar">
+		<div class="customSelect">
+			<p>Example: </p>
+			<select name="" id="example">
+				<option value="primer0">Primer 0</option>
+				<option value="primer1">Primer 1</option>
+				<option value="primer2">Primer 2</option>
+				<option value="primer3">Primer 3</option>
+				<option value="primer4">Primer 4</option>
+				<option value="primer5">Primer 5</option>
+			</select>
+		</div>	
+		<div class="customSelect">
+			<p>Algorithm: </p>
+			<select name="" id="algorithm">
+				<option value="BFS">BFS</option>
+				<option value="DFS">DFS</option>
+				<option value="IDDFS">IDDFS</option>
+				<option value="A*">A*</option>
+				<option value="IDA*">IDA*</option>
+			</select>
+			
+		</div>
+		<div class="commands">
+			<button id="searchBtn">Search</button>
+			<button id="displayBtn">Display</button><input id="animSpeed" title="Animation Speed" type="number" min="0.1" max="5" step="0.1" value="1">
+		</div>
+
+		<div class="results">
+			<div class="result" id="time"><div class="header">Porabljen čas: </div><span class="value">-</span></div>
+			<div class="result" id="count"><div class="header">Št obdelanih vozlišč: </div><span class="value">-</span></div>
+			<div class="result" id="depth"><div class="header">Max globina: </div><span class="value">-</span></div>
+			<div class="result" id="length"><div class="header">Dolžina poti: </div><span class="value">-</span></div>
+			<div class="result" id="price"><div class="header">Cena poti: </div><span class="value">-</span></div>
+			
+			<div class="result"><div class="header">Pot: <span id="pathLen"></span></div><textarea id="pathArea" readonly></textarea></div>
+			<div class="commands"><button id="cleanPathBtn">Clean Path</button></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="left">
+			<canvas style="border: solid 1px;" width="800" height="800" id="canvas"></canvas>
+		</div>
+
+		<div class="right">
+			<canvas class="start" style="border: solid 1px;" width="400" height="400" id="canvasStart"></canvas>	
+			<canvas class="end" style="border: solid 1px;" width="400" height="400" id="canvasEnd"></canvas>
+		</div>
+		
+	</div>
+
+
+	<script type="module" src="main.js"></script>
+</body>
+</html>

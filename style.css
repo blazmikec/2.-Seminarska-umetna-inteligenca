@@ -1,0 +1,156 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-family: system-ui;
+}
+
+.container {
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.sidebar {
+	position:relative;
+	width: 450px;
+	height: 100vh;
+	background: #1a1c1e;
+	color: #b4b6be;
+	padding: 15px 20px;
+	overflow-y: scroll;
+	float: left;
+}
+
+/* width */
+.sidebar::-webkit-scrollbar {
+	width: 4px;
+}
+
+/* Track */
+.sidebar::-webkit-scrollbar-track {
+	background: #1a1c1e;
+}
+
+/* Handle */
+.sidebar::-webkit-scrollbar-thumb {
+	background: #888;
+	border-radius: 3px;
+}
+
+/* Handle on hover */
+.sidebar::-webkit-scrollbar-thumb:hover {
+	background: #777;
+}
+
+
+.customSelect {
+	margin: 15px 0 20px;
+}
+
+.customSelect p {
+	text-transform: uppercase;
+	font-size: 15px;
+	margin: 10px 0px;
+}
+
+select {
+	width: 100%;
+	text-align: center;
+	font-size: 26px;
+	font-family: inherit;
+	background: #313334;
+	color: inherit;
+	border: 0;
+	border-radius: 5px;
+	padding: 3px 19px;
+	cursor: pointer;
+}
+
+.commands {
+	margin: 15px 0 30px;
+	display: flex;
+	position: relative;
+}
+
+.commands button {
+	flex: 1;
+	margin: 0 4px;
+	height: 30px;
+	background: #272828;
+	border: 0;
+	color: inherit;
+	border-radius: 3px;
+	cursor: pointer;
+	transition: ease-in-out .1s;
+}
+
+.commands button:hover, select:hover {
+	background: #292b2b;
+}
+
+.commands input {
+	position: absolute;
+	right: 0;
+	height: 28px;
+	width: 45px;
+	background: #313334;
+	border: 0;
+	color: inherit;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	text-align: center;
+	outline: 0;
+}
+
+.results .result {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.results .header {
+	width: 100%;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.results .value {
+	font-size: 27px;
+	margin-left: 7px;
+}
+
+#path {
+	font-size: 20px;
+}
+
+textarea {
+	width: 100%;
+	height: 25vh;
+	border:none;
+	overflow: auto;
+	resize: vertical;
+	background-color: #313334;
+	color: inherit;
+}
+
+.start {
+	position: relative;
+	z-index: 0;
+	float: left;
+}
+
+.end {
+	position: relative;
+	z-index: 1;
+}
+
+.left {
+	float: left;
+	margin-right: 20px;
+}
+
+.right {
+	max-width: 400px;
+}
+
