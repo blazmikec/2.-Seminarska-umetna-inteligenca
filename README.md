@@ -27,7 +27,7 @@ Avtorja: Urh Jamšek, Blaž Mikec
   - [Primer 3](#primer-3)
   - [Primer 4](#primer-4)
   - [Primer 5](#primer-5)
-- [Zaključek](#zakljucek)
+- [Zaključek](#zaključek)
 
 
 # Uvod
